@@ -9,14 +9,55 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./src/assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-  <body></body>
+  <body>
+    <div id="root" class="grid">
+      <header class="header">
+        <img
+          src="./src/assets/images/logo.svg"
+          width="153"
+          height="33"
+          alt="logo base appreal"
+        />
+      </header>
+      <div class="photo-container"></div>
+      <main class="main">
+        <h1 class="headline">
+          <span class="ligth">we're</span>
+          <span class="dark">coming soon</span>
+        </h1>
+        <p class="text">
+          Hello fellow shoppers! We're currently building our new fashion sotre.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals
+        </p>
+        <form class="form-group">
+          <div class="form-control">
+            <input
+              autocomplete="off"
+              class="field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              aria-label="email contact"
+            />
+            <button class="btn">
+              <img src="./src/assets/images/icon-arrow.svg" alt="icon arrow" />
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
