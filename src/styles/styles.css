@@ -125,6 +125,8 @@ body {
     grid-row: 2 / 2;
     grid-column: 1 / span 2;
     padding-inline: 6.25rem;
+    align-self: center;
+
     text-align: start;
     /* grid-row: 1 / span 2; */
   }
@@ -133,6 +135,7 @@ body {
 @media screen and (min-width: 1024px) {
   .main {
     padding-inline: 14.375rem;
+
     /* grid-row: 1 / span 2; */
   }
   .headline {
@@ -161,6 +164,13 @@ body {
     inset-block-start: -2px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .main {
+    padding-inline-start: 21.875rem;
+  }
+}
+
 .icon-error {
   position: absolute;
   inset-inline-end: 4.5rem;
