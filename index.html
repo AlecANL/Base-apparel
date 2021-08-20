@@ -41,12 +41,12 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals
         </p>
-        <form class="form-group">
+        <form class="form-group" id="form">
           <div class="form-control">
             <input
               autocomplete="off"
               class="field"
-              type="email"
+              type="text"
               name="email"
               id="email"
               placeholder="Email Address"
@@ -55,9 +55,20 @@
             <button class="btn">
               <img src="./src/assets/images/icon-arrow.svg" alt="icon arrow" />
             </button>
+
+            <img
+              class="icon-error"
+              src="./src/assets/images/icon-error.svg"
+              alt="icon error"
+              id="icon-error"
+            />
           </div>
         </form>
+        <span id="txt-error" class="txt-error"
+          >please provide a valid email</span
+        >
       </main>
     </div>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>
